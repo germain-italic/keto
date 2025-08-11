@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Alimentaire Keto Quotidien</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1cm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11px;
+            line-height: 1.3;
+            margin: 0 auto;
+            padding: 0;
+            background: white;
+            width: 50%;
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .header p {
+            margin: 3px 0 0 0;
+            font-size: 9px;
+            opacity: 0.9;
+        }
+        
+        .meal-section {
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+        
+        .meal-section h2 {
+            background: #2c3e50;
+            color: white;
+            padding: 4px 8px;
+            margin: 0 0 6px 0;
+            font-size: 12px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .food-item {
+            background: #ebebeb;
+            border-left: 3px solid #e74c3c;
+            padding: 6px 8px;
+            margin-bottom: 4px;
+            border-radius: 0 3px 3px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .food-name {
+            font-weight: bold;
+            color: #2c3e50;
+            flex: 1;
+        }
+        
+        .food-quantity {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        .macro-summary {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 12px 0;
+        }
+        
+        .macro-summary h3 {
+            margin: 0 0 6px 0;
+            color: #856404;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .macro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            text-align: center;
+        }
+        
+        .macro-item {
+            background: white;
+            padding: 4px;
+            border-radius: 3px;
+            border: 1px solid #ffc107;
+        }
+        
+        .macro-label {
+            font-size: 9px;
+            color: #856404;
+            font-weight: bold;
+        }
+        
+        .macro-value {
+            font-size: 11px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .snacks-section {
+            background: #e8f5e8;
+            border: 1px solid #27ae60;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 12px 0;
+        }
+        
+        .snacks-section h3 {
+            margin: 0 0 6px 0;
+            color: #27ae60;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .guidelines {
+            background: #f0f8ff;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 12px 0;
+        }
+        
+        .guidelines h3 {
+            margin: 0 0 6px 0;
+            color: #2980b9;
+            font-size: 11px;
+        }
+        
+        .guidelines ul {
+            margin: 0;
+            padding-left: 15px;
+            font-size: 9px;
+        }
+        
+        .guidelines li {
+            margin-bottom: 2px;
+        }
+        
+        .warning {
+            background: #ffe6e6;
+            border: 1px solid #ff4757;
+            border-radius: 4px;
+            padding: 6px;
+            margin: 8px 0;
+            text-align: center;
+        }
+        
+        .warning p {
+            margin: 0;
+            font-size: 10px;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 8px;
+            border-top: 1px solid #bdc3c7;
+            font-size: 8px;
+            color: #7f8c8d;
+        }
+        
+        .calories-badge {
+            background: #8e44ad;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 9px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🥑 Plan Alimentaire Keto Quotidien</h1>
+        <p>Déficit calorique ~400 cal</p>
+    </div>
+
+    <div class="meal-section">
+        <h2>🌅 PETIT-DÉJEUNER (Version Allégée)</h2>
+        
+        <div class="food-item">
+            <span class="food-name">Lardons</span>
+            <span class="food-quantity">75g</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Œufs</span>
+            <span class="food-quantity">1-2</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Avocat</span>
+            <span class="food-quantity">1/4</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Matcha + Lait d'amande + Édulcorant</span>
+            <span class="calories-badge">~450 cal</span>
+        </div>
+    </div>
+
+    <div class="meal-section">
+        <h2>🍽️ REPAS PRINCIPAUX (×2)</h2>
+        
+        <div class="food-item">
+            <span class="food-name">Légumes surgelés (<5g carbs/100g)</span>
+            <span class="food-quantity">200-250g</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Viande/Poisson (bœuf, poulet, colin, saumon)</span>
+            <span class="food-quantity">150-200g</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Huile d'olive/Ghee (cuisson)</span>
+            <span class="food-quantity">40-50g</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Fromage (Brie, Comté, Bleu, etc.)</span>
+            <span class="food-quantity">40-50g</span>
+        </div>
+        
+        <div class="food-item">
+            <span class="food-name">Total par repas</span>
+            <span class="calories-badge">~800 cal</span>
+        </div>
+    </div>
+
+    <div class="snacks-section">
+        <h3>🧀 COLLATIONS & DESSERTS</h3>
+        
+        <div class="food-item" style="background: white; border-left-color: #27ae60;">
+            <span class="food-name">Fromage ou Biltong</span>
+            <span class="food-quantity">Au besoin</span>
+        </div>
+        
+        <div class="food-item" style="background: white; border-left-color: #27ae60;">
+            <span class="food-name">Chocolat 90%</span>
+            <span class="food-quantity">2 carrés/repas</span>
+        </div>
+        
+        <div class="food-item" style="background: white; border-left-color: #27ae60;">
+            <span class="food-name">Yaourt grec</span>
+            <span class="food-quantity">Occasionnel</span>
+        </div>
+        
+        <div class="food-item" style="background: white; border-left-color: #27ae60;">
+            <span class="food-name">Sardines (Max 3-4×/semaine)</span>
+            <span class="food-quantity">1 boîte</span>
+        </div>
+    </div>
+
+    <div class="macro-summary">
+        <h3>📊 OBJECTIFS MACROS QUOTIDIENS</h3>
+        <div class="macro-grid">
+            <div class="macro-item">
+                <div class="macro-label">GLUCIDES</div>
+                <div class="macro-value">20-25g</div>
+            </div>
+            <div class="macro-item">
+                <div class="macro-label">PROTÉINES</div>
+                <div class="macro-value">120-140g</div>
+            </div>
+            <div class="macro-item">
+                <div class="macro-label">LIPIDES</div>
+                <div class="macro-value">140-160g</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 6px;">
+            <span class="calories-badge">Total : ~2000-2200 calories</span>
+        </div>
+    </div>
+
+    <div class="warning">
+        <p>⚠️ LIMITE SODIUM : Réduire le sel ajouté les jours avec sardines</p>
+    </div>
+
+    <div class="guidelines">
+        <h3>📋 Règles de Base</h3>
+        <ul>
+            <li><strong>Légumes :</strong> Toujours vérifier <5g carbs/100g</li>
+            <li><strong>Pesage :</strong> Quantités = poids avant cuisson (surgelé)</li>
+            <li><strong>Chocolat :</strong> 20g/jour max (4 carrés total)</li>
+            <li><strong>Hydratation :</strong> 2-2.5L minimum (3L+ en saison chaude)</li>
+            <li><strong>Sardines :</strong> Limiter à 3-4×/semaine pour le sodium</li>
+            <li><strong>Épices :</strong> Remplacer le sel par les mélanges d'épices</li>
+        </ul>
+    </div>
+
+    <div class="guidelines">
+        <h3>🏃‍♂️ Activité Physique</h3>
+        <ul>
+            <li><strong>Musculation :</strong> 45 min</li>
+            <li><strong>Cardio :</strong> 45 min zones 2/3</li>
+            <li><strong>Repos :</strong> 1 jour libre</li>
+            <li><strong>Détente :</strong> Badminton 2h le samedi</li>
+            <li><strong>Écoute :</strong> Adapter l'intensité selon l'énergie du jour</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        https://github.com/germain-italic/keto • Plan Keto
+    </div>
+</body>
+</html>
